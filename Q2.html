@@ -1,0 +1,18 @@
+<input type="text" id="userInput" placeholder="Enter a number">
+<button onclick="checkInput()">Check</button>
+
+<script>
+function checkInput() {
+    let i = document.getElementById("userInput").value;
+
+    if (i === "" || isNaN(i)) {
+        alert("That is not a valid number!");
+    } else if (i < 10) {
+        alert("The number is lower than 10");
+    } else if (i > 10) {
+        alert("The number is higher than 10");
+    } else {
+        alert("The number is equal to 10");
+    }
+}
+</script>
